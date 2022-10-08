@@ -2,10 +2,10 @@
 ### Cited from
 https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ
 ### How To Use
-- Group0_input data for network computation is generated using ZYNQ_YOLO\runall\pygen0\runall.py. (Note that the py script deletes all.h files in the current path before use, to prevent overwriting errors, you can add delete scripts by yourself)
+- Group0_input data for network computation is generated using pygen0\runall.py. (Note that the py script deletes all.h files in the current path before use, to prevent overwriting errors, you can add delete scripts by yourself)
   - runall.py does the following:
-    - load image data£¨loadimg.c ...£©
-    - quantise the image£¨head_short.c ...£©
+    - load image dataÂ£Â¨loadimg.c ...Â£Â©
+    - quantise the imageÂ£Â¨head_short.c ...Â£Â©
     - sort_input:Change the order of input image data from 416 * 416 * 3 to 3 * 416 * 416. (sort_input.c)
     - pad the input from 3 * 416 * 416 to 4 * 416 * 416
 
@@ -18,5 +18,5 @@ https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ
     - Converts the output data order to draw the anchor box. (including yolo0.h and yolo1.h)
     - Delete data that is not needed after the transformation order (usually 0)
     - Drop the ", "and send it to your draw_box for calculation.
-  - Using ZYNQ_YOLO \ draw_box_c
+  - Using draw_box_c
     - Replace yolo0_cal.dat/yolo1_cal.dat and input_image_short.h in the main function
