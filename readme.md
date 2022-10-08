@@ -13,7 +13,7 @@ https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ
   - We need data for Group10 and Group13, which are two layers of YOLO data respectively. You can copy it out by going into sdk_terminal with the printf function. This is a stupid method.
 - Vivado HLS Command Prompt can be used to input script instructions for subsequent operation (because some data types are involved and only work in HLS environment).
   - The copied output data is fed into enddraw/endraw.py for processing. endraw.py contains the following operations:
-    - The copied data may have blank lines, so use pythonTool /group.py to remove blank lines. The output results can be verified by the number of output lines.
+    - The copied data may have blank lines, so use pythontool /group.py to remove blank lines. The output results can be verified by the number of output lines.
     - Do some processing (including deleting "," or adding "}" ) to the data document for subsequent program processing.
     - Converts the output data order to draw the anchor box. (including yolo0.h and yolo1.h)
     - Delete data that is not needed after the transformation order (usually 0)
