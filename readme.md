@@ -1,6 +1,6 @@
 ## Base on ZYNQ7020 YOLOv3-Tiny 
 ### Cited from
-https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ
+The YoloV3-tiny Network Hardware Accelerator section code you can refer to https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ.
 ### How To Use
 - Group0_input data for network computation is generated using pygen0/runall.py. (Note that the py script deletes all.h files in the current path before use, to prevent overwriting errors, you can add delete scripts by yourself)
   - runall.py does the following:
