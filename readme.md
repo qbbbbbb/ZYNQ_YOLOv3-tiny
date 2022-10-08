@@ -4,9 +4,9 @@ https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ
 ### How To Use
 - Group0_input data for network computation is generated using pygen0\runall.py. (Note that the py script deletes all.h files in the current path before use, to prevent overwriting errors, you can add delete scripts by yourself)
   - runall.py does the following:
-    - load image data£¨loadimg.c ...£©
-    - quantise the image£¨head_short.c ...£©
-    - sort_input:Change the order of input image data from 416 * 416 * 3 to 3 * 416 * 416. (sort_input.c)
+    - load image data (loadimg.c)
+    - quantise the image (head_short.c)
+    - sort_input: Change the order of input image data from 416 * 416 * 3 to 3 * 416 * 416. (sort_input.c)
     - pad the input from 3 * 416 * 416 to 4 * 416 * 416
 
 - Replace group0_input with the output data from the previous step in the SDK running folder, and send the input data to the network for calculation to get the output.
